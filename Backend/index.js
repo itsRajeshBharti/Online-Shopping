@@ -10,7 +10,7 @@ app.use(cors()); // accepting routes from all origin.
 app.use(upload()); // used for accepting multipart-form-data.
 app.use("/content", express.static("public")); // used to serve static content from the server.
 app.use(bodyparse.json()); // used for accepting raw(json) data.
-app.use(bodyparse.urlencoded({ extended: true })); // used for accepting x-www-form-urlencoded.
+app.use(bodyparse.urlencoded({ extended: true })); // used for accepting x-www-form-urlencoded
 
 app.get("/", (req, res) => {
   return res
